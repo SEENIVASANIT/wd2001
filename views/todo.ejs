@@ -52,7 +52,7 @@
     <div class="grid grid-cols-6">
       <div class="col-start-3 col-span-2">
         <%- include("header.ejs") %> 
-        <a href="/signout" class="bg-blue-600 text-white px-4 py-1 rounded font-medium mr-2 mb-2" > Signout Account</a>
+        <a href="/signout" style="color: blue; text-decoration: underline;"> Signout Account</a>
         <form action="/todos" method="post">
           <input type="hidden" name="_csrf" value="<%= csrfToken %>" />
           <div class="flex gap-2 py-4">
